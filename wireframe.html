@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Website Wireframe - Mobile & Desktop</title>
+<style>
+  body { font-family: Arial, sans-serif; background: #f4f4f4; padding: 20px; color: #333; }
+  .container { display: flex; gap: 40px; justify-content: center; flex-wrap: wrap; }
+  .device { background: #fff; border: 3px solid #333; padding: 15px; box-sizing: border-box; }
+  .mobile { width: 320px; }
+  .desktop { width: 650px; }
+  h2 { text-align: center; border-bottom: 2px solid #333; padding-bottom: 10px; margin-top: 0; font-size: 16px; }
+  .box { border: 2px dashed #666; background: #e9e9e9; padding: 15px; margin-bottom: 15px; text-align: center; }
+  .nav { display: flex; justify-content: space-between; align-items: center; }
+  .grid-desktop { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+  .grid-mobile { display: flex; flex-direction: column; gap: 10px; }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <!-- CHẾ ĐỘ XEM DI ĐỘNG -->
+  <div class="device mobile">
+    <h2>MOBILE VIEW (375px)</h2>
+    <div class="box nav">
+      <span>[LOGO]</span>
+      <span>[☰ MENU]</span>
+    </div>
+    <div class="box" style="height: 120px;">[HERO IMAGE / BANNER]<br><small>Tiêu đề chính & Nút kêu gọi</small></div>
+    <div class="grid-mobile">
+      <div class="box">[NỘI DUNG / DỊCH VỤ 1]</div>
+      <div class="box">[NỘI DUNG / DỊCH VỤ 2]</div>
+      <div class="box">[NỘI DUNG / DỊCH VỤ 3]</div>
+    </div>
+    <div class="box">[FOOTER - THÔNG TIN LIÊN HỆ]</div>
+  </div>
+
+  <!-- CHẾ ĐỘ XEM MÀN HÌNH LỚN -->
+  <div class="device desktop">
+    <h2>DESKTOP VIEW (1200px)</h2>
+    <div class="box nav">
+      <span>[LOGO]</span>
+      <span>[Trang chủ | Giới thiệu | Dịch vụ | Liên hệ]</span>
+    </div>
+    <div class="box" style="height: 150px;">[HERO IMAGE / BANNER RỘNG]<br><small>Tiêu đề lớn bên trái + Hình ảnh minh họa bên phải</small></div>
+    <div class="grid-desktop">
+      <div class="box" style="height: 100px;">[CỘT NỘI DUNG 1]</div>
+      <div class="box" style="height: 100px;">[CỘT NỘI DUNG 2]</div>
+      <div class="box" style="height: 100px;">[CỘT NỘI DUNG 3]</div>
+    </div>
+    <div class="box">[FOOTER - THÔNG TIN LIÊN HỆ & MẠNG XÃ HỘI]</div>
+  </div>
+</div>
+
+</body>
+</html>
